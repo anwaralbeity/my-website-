@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dc3fcc408c.js" crossorigin="anonymous"></script>
+</head>
+<head>
+    <style>
+       .download-cv-btn {
+         background-color: #3f37a5;
+         border: none;
+         color: white;
+         padding: 10px 20px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 16px;
+         margin: 4px 2px;
+         cursor: pointer;
+       }
+   
+       .submit-btn {
+         background-color: #3f37a5;
+         border: none;
+         color: white;
+         padding: 10px 20px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 16px;
+         margin: 4px 2px;
+         cursor: pointer;
+       }
+    </style>
+   </head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo 2.png" class="logo" alt="Logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars"onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Engineer</p>
+            <h1>Hi, I'm <span>Anwar</span><br> from Kenya</h1>
+        </div>
+    </div>
+</div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user1.png" alt="Anwar's Photo">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello there! I'm Anwar, a passionate and innovative software engineer with a knack for turning complex problems into elegant solutions. With a strong foundation in programming languages like Java, Python, and JavaScript, I thrive on tackling challenging projects and pushing the boundaries of what technology can achieve. My journey in the world of software development has been marked by a relentless pursuit of excellence, a commitment to lifelong learning, and a deep love for crafting clean, efficient code. When I'm not immersed in lines of code, you'll find me exploring new technologies, enjoying outdoor adventures, or sharing my knowledge with the tech community. Welcome to my corner of the internet, where I'll be sharing my experiences, insights, and the occasional snippet of code. Let's connect and embark on this coding adventure together!</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                    <p class="tab-links" onclick="openTab('experiences')">Experiences</p>
+                    <p class="tab-links" onclick="openTab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Software</span> Development</li>
+                        <li><span>Web Development</span> Web App Development</li>
+                        <li><span>App Development</span> Building Android/iOS Apps</li>
+                        <li><span>SQL</span>databases</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experiences">
+                    <ul>
+                        <li><span>Currently</span> Currently looking for employment </li>
+                        <li><span>2019-2020</span> Freelancing web Developer also worked with ecommerce stores</li>
+                        <li><span>2017-2019</span> Business sales executive at contigent haulage africa limited</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020</span> Currently persuing an online certificate in Business Development</li>
+                        <li><span>2018</span> Currently pursuing computer science in riara university</li>
+                        <li><span>2016</span> Currently on the pursuit of HCIA certification in networking from Huawei </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="Services">
+    <div class="container">
+        <h1 class="sub-title">MY SERVICES</h1>
+        <div class="service-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                 <p>Revamp your online presence with my expert web design service. I specialize in crafting captivating and user-friendly websites that leave a lasting impression and drive results. Whether you're starting from scratch or looking to revamp your existing site, I'm here to make your website unforgettable—it's your online storefront, and I'm here to make it shine.</p>
+                 <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-simple"></i>
+                <h2>Software Development</h2>
+                 <p>I'm here to turn your ideas into functional, efficient, and scalable software. Let's collaborate to build cutting-edge applications that empower your business and exceed your expectations. Your software dreams, my code reality.</p>
+                 <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store-ios"></i>
+                <h2>App Development</h2>
+                 <p>I specialize in crafting user-friendly and innovative mobile applications that meet your unique needs. Whether it's iOS or Android, I'm here to bring your app vision to life.</p>
+                 <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">MY WORK</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" alt="">
+                <div class="layer">
+                    <h3>social media app</h3>
+                    <p>this app helps you connect with different talents all over the world </p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" alt="">
+                <div class="layer">
+                    <h3>music app</h3>
+                    <p>this app helps you download and stream music of all kinds and cultures </p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" alt="">
+                <div class="layer">
+                    <h3>online shopping app</h3>
+                    <p>This app helps make shopping easy from the comfort of your home</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">see more</button></a>
+    </div>
+</div>
+<!------------------------------------contact section------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">contact me </h1>
+                <p><i class="fa-regular fa-envelope"></i>anwaralbeity12@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+254718235532</p>
+                <div class="social-icons">
+                    <a href="#https://www.facebook.com/profile.php?id=61552388484911"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#https://twitter.com/AnwarAlbe1ty"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#https://www.linkedin.com/in/anwar-albeity/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet"> 
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder="Your Email"required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg">hello</span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>All rights reserved © Anwar, 2023</p>
+    </div>
+</div>
+
+<script>
+    var tabLinks = document.querySelectorAll(".tab-links");
+    var tabContents = document.querySelectorAll(".tab-contents");
+
+    function openTab(tabName) {
+        tabLinks.forEach(function (tabLink) {
+            tabLink.classList.remove("active-link");
+        });
+        tabContents.forEach(function (tabContent) {
+            tabContent.classList.remove("active-tab");
+        });
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabName).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu")
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0"
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px"
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyIgNJUqKZE_0tWWzj4QDjQA7aCZO8TQO83B8_SGPhxsT3clmowR_R_off8r2FHh65h/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        } )
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
